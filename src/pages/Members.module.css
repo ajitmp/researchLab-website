@@ -1,0 +1,109 @@
+.members {
+  padding: 20px;
+}
+
+.professor {
+  display: flex;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.professorLeft {
+  flex: 1;
+}
+
+.professorRight {
+  flex: 2;
+  padding-left: 10px;
+  color: white;
+}
+
+.professorRight p {
+  color: white;
+  font-size: larger;
+}
+
+.profileImage {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.currentMembers,
+.alumni {
+  margin-bottom: 40px;
+}
+
+.alumni h2 {
+  align-self: center;
+}
+
+.membersGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.alumnisGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.memberCard {
+  background: black;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.alumniCard {
+  background: black;
+
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.memberImage {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.alumniImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.alumniImage {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.memberInfo,
+.alumniInfo {
+  padding: 10px;
+}
+
+.memberInfo p {
+  margin: 5px 0;
+  color: white;
+}
+
+.alumniInfo p {
+  margin: 5px 0;
+  color: white;
+}
+
+.memberInfo a,
+.alumniInfo a {
+  color: #0077b5; /* LinkedIn blue */
+  text-decoration: none;
+  font-size: 1.2em;
+}

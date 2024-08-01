@@ -1,0 +1,99 @@
+/* Ensure there are no margins/paddings applied to the body or parent elements */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row; /* Arrange sections horizontally */
+  background-color: #003d00; /* Deep green background for the entire header */
+  color: #fff;
+  width: 100vw; /* Ensure header spans the full viewport width */
+  align-items: center; /* Center items vertically */
+  box-sizing: border-box;
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+}
+
+.headerLeft,
+.headerRight {
+  flex: 0 1 auto; /* Size based on content but allow shrinking */
+  padding: 10px 20px; /* Add padding for spacing */
+  white-space: nowrap; /* Prevent wrapping within these sections */
+  overflow: hidden; /* Hide overflowed content */
+  text-overflow: ellipsis; /* Show ellipsis for overflowed text */
+}
+
+.headerMiddle {
+  flex: 1; /* Take up the remaining space */
+  display: flex;
+  justify-content: center;
+  background-color: #003d00; /* Green Back Ground Black background #000*/
+
+  color: #fff; /* White text color for contrast */
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  background-color: #003d00; /* Deep green background */
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align "Keep in Touch" to the right */
+  background-color: #003d00; /* Deep green background */
+}
+
+.headerLeft h1 {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navItem {
+  margin: 0 15px;
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 10px 15px;
+  display: block;
+}
+
+.navLink:hover {
+  background-color: #005600; /* Lighten the background on hover */
+  border-radius: 5px;
+}
+
+.contactBox {
+  background-color: #004d00; /* Slightly darker green for the contact box */
+  text-align: center;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.contactText {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack sections vertically on small screens */
+  }
+
+  .headerMiddle {
+    margin-top: 10px;
+  }
+}

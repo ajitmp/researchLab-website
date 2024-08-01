@@ -1,0 +1,130 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.coverImageSection {
+  width: 100%;
+  height: 500px; /* Adjust height as needed */
+  overflow: hidden;
+  position: relative;
+}
+
+.coverImageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.coverImage {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+}
+
+.whoWeAreSection {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.whoWeAreText {
+  flex: 1;
+  color: white;
+}
+
+.whoWeAreText h2 {
+  font-size: 1.5em;
+}
+
+.whoWeAreText p {
+  font-size: 1.5em;
+  color: white;
+}
+
+.buttonContainer {
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.whoWeAreImages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  flex: 1;
+}
+
+.whoWeAreImage {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.currentOpeningsSection {
+  padding: 20px;
+}
+
+.featuredNewsSection {
+  padding: 20px;
+}
+
+.newsCards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.newsCard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  overflow: hidden;
+  min-width: 0; /* Prevent the card from growing too large */
+}
+
+.newsImage {
+  width: 100%;
+  height: 300px; /* Adjust height based on your design */
+  object-fit: cover;
+}
+
+.newsText {
+  padding: 10px;
+  color: black;
+}
+
+.newsDate {
+  font-weight: bold;
+  color: black;
+}
+
+.newsEvent {
+  font-style: italic;
+}
+
+.newsTitle {
+  font-size: 1.1em;
+  margin: 5px 0;
+  color: black;
+}
+
+.newsDescription {
+  font-size: 0.9em;
+}
